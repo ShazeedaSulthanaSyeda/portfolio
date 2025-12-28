@@ -33,16 +33,43 @@
       60% { transform: rotate(20deg); }
       100% { transform: rotate(0deg); }
     }
+    .next-btn {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2563eb;
+  colour: white;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #1e40af;
+}
+
   </style>
 </head>
 
 <body>
 
   <div class="hero">
-    <h1>Hi <span class="wave">👋</span></h1>
-    <h2>I’m Shazeeda Sulthana</h2>
-    <p>Data Analyst | BI Analyst | SAP QA</p>
-  </div>
+  <h1>Hi <span class="wave">👋</span> I am</h1>
+  <h2>Shazeeda Sulthana Syeda</h2>
+
+  <button class="next-btn"
+    onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+    Next ↓
+  </button>
+</div>
+
+<section id="about" style="margin-top: 120px;">
+  <h3>About Me</h3>
+  <p>
+    I am a Master’s student in Information Science & Technology at Missouri S&T.
+  </p>
+</section>
+
 
 </body>
 </html>
